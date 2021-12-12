@@ -147,6 +147,13 @@ class Game {
   }
 }
 
+class Player {
+  constructor(color) {
+    this.color = color;
+  }
+}
+
+
 const start = document.getElementById('start');
 start.addEventListener('click', startGame);
 function startGame() {
