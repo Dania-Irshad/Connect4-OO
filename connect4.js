@@ -156,6 +156,7 @@ class Player {
 
 const start = document.getElementById('start');
 start.addEventListener('click', startGame);
-function startGame() {
+function startGame(e) {
+  e.preventDefault();
   new Game(6, 7);
 }
