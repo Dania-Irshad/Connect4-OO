@@ -1,4 +1,9 @@
+body {
+  background-color: #000000;
+}
+
 h1 {
+  font-family: fantasy;
   background-image: url(https://i.imgur.com/Ey8fs1t.gif);
   background-size: cover;
   text-align: center;
@@ -8,10 +13,49 @@ h1 {
   color: transparent;
   -webkit-background-clip: text;
   margin: 0px;
+  padding: 25px 25px 35px 25px;
 }
 
-body {
-  background-color: #000000;
+label {
+  margin-right: 10px;
+  font-family: fantasy;
+  text-align: right;
+  width: 300px;
+  font-size: 40px;
+  background-clip: text;
+  background: linear-gradient(00.25turn, #4ecdc4, #ff6b6b, #ffe66d);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+input {
+  margin-left: 10px;
+  border-radius: 10px;
+  font-family: fantasy;
+  width: 500px;
+  background: none;
+  font-size: 40px;
+  color: #ff6b6b;
+  border: 2px solid;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+#start
+{
+  margin-left: 20px;
+  font-family: fantasy;
+  cursor: pointer;
+  width: 200px;
+  background: none;
+  color: #ff6b6b;
+  border-radius: 10px;
+  border: 2px solid;
+  font-size: 30px;
 }
 
 /* game board table */
