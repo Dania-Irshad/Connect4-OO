@@ -159,7 +159,11 @@ const start = document.getElementById('start');
 start.addEventListener('click', startGame);
 function startGame(e) {
   e.preventDefault();
-  let player1 = new Player(document.getElementById('color1').value);
-  let player2 = new Player(document.getElementById('color2').value);
-  new Game(player1, player2, 6, 7);
+  let player1Input = document.getElementById('color1').value;
+  let player2Input = document.getElementById('color2').value;
+  if (player1Input != '' && player2Input != '') {
+    let player1 = new Player(player1Input);
+    let player2 = new Player(player2Input);
+    new Game(player1, player2, 6, 7);
+  }
 }
